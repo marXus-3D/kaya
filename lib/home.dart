@@ -1,3 +1,4 @@
+import 'leftdrawer.dart';
 import 'package:flutter/material.dart';
 import 'search.dart';
 import 'settings.dart';
@@ -57,6 +58,7 @@ class _HomeState extends State<Home> {
         currentIndex: _currentIndex,
         onTap:(value)=> _changePage(value),
       ),
+      drawer: Leftdrawer(),
     );
   }
 }
